@@ -1,1 +1,108 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: radial-gradient(circle, #00cc00, #004d00);
+}
+
+.input-fields {
+  display: flex;
+
+  margin-top: 2px;
+}
+
+.card {
+  margin: auto;
+  margin-top: 5px;
+  width: 300px;
+  height: 450px;
+  min-height: 200px;
+  min-width: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.generate-buttons {
+  width: 300px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: radial-gradient(circle, #ff6347, #8b0000);
+  margin-left: 39%;
+  margin-top: 10px;
+}
+/* Elements for top left corner */
+.heart::before {
+  content: "\2665";
+  position: absolute;
+  color: red;
+  top: 1px;
+  left: 5px;
+}
+
+.diamond::before {
+  content: "\2666";
+  position: absolute;
+  color: red;
+  top: 1px;
+  left: 5px;
+}
+
+.spade::before {
+  content: "\2660";
+  position: absolute;
+  color: black;
+  bottom: 1px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.club::before {
+  content: "\2663";
+  position: absolute;
+  color: black;
+  bottom: 1px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+/* Elements for bottom right corner */
+.heart::after {
+  content: "\2665";
+  position: absolute;
+  color: red;
+  bottom: 1px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.diamond::after {
+  content: "\2666";
+  position: absolute;
+  color: red;
+  bottom: 1px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.spade::after {
+  content: "\2660";
+  position: absolute;
+  color: black;
+  top: 1px;
+  left: 5px;
+}
+
+.club::after {
+  content: "\2663";
+  position: absolute;
+  color: black;
+  top: 1px;
+  left: 5px;
+}
